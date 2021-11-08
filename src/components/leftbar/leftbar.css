@@ -2,6 +2,8 @@
     flex: 3;
     height: calc(100vh -50px);
     overflow-y: scroll;
+    position: sticky !important;
+    top: 50px;
 }
 ::-webkit-scrollbar {
     width: 10px;
@@ -14,6 +16,7 @@
 }
 .leftbarWrapper{
       padding: 20px;
+      
 }
 .leftbarList{
     padding: 0;

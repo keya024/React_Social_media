@@ -26,7 +26,7 @@ export default function Post(){
                         <span className="postLikeCounter">32 people like it</span>
                      </div>
                      <div className="postBottomRight">
-                        <span className="postCommentText">9 comments</span>
+                        <span className="postCommentText">9 comments </span>
                      </div>
                 </div>
             </div>
