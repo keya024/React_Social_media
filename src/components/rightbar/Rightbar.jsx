@@ -108,7 +108,8 @@ export default function Rightbar(){
     return(
         <div className="rightbar">
             <div className="rightbarWrapper">
-               <ProfileRightbar />
+               <ProfileRightbar
+                />
             </div>
         </div>
     )
