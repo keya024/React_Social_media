@@ -9,7 +9,7 @@
 }
 .loginwrapper{
     width: 70%;
-    height: 80%;
+    height: 70%;
     display: flex;
 }
 .loginleft,.loginright{
@@ -41,9 +41,9 @@ font-size: 25px;
     border-radius: 10px;
     border: 1px solid gray;
     font-size: 18px;
-    padding-left: 20px;
+    
 }
-.loginbutton:focus{
+.logininput:focus{
     outline: none;
 }
 .loginbutton{
@@ -54,6 +54,7 @@ font-size: 25px;
     color: white;
     font-size: 20px;
     font-weight: 500;
+    cursor: pointer;
 }
 .loginforgot{
     text-align: center;
@@ -86,4 +87,7 @@ font-size: 25px;
 .radioMarginRight{
     margin-right: 0px !important;
     }
+.span{
+    text-align: center;
+}
 

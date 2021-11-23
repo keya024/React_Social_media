@@ -37,13 +37,13 @@ font-size: 25px;
     justify-content: space-between;
 }
 .logininput{
-    height: 5px;
-    border-radius: 20px;
+    height: 50px;
+    border-radius: 10px;
     border: 1px solid gray;
     font-size: 18px;
     padding-left: 20px;
 }
-.loginbutton:focus{
+.logininput:focus{
     outline: none;
 }
 .loginbutton{
@@ -54,6 +54,7 @@ font-size: 25px;
     color: white;
     font-size: 20px;
     font-weight: 500;
+    cursor: pointer;
 }
 .loginforgot{
     text-align: center;
@@ -69,4 +70,5 @@ font-size: 25px;
     color: white;
     font-size: 20px;
     font-weight: 500;
+    cursor: pointer;
 }

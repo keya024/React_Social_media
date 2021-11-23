@@ -19,7 +19,6 @@ export default function Login() {
                             <button className="loginbutton">Log In</button>
                             <span className="loginforgot">Forgot Password?</span>
                             <button className="loginregister">Create a new Account</button>
-
                         </div>
                     </div>
         
