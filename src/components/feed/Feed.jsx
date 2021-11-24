@@ -15,7 +15,7 @@ export default function Feed({username}){
         setPosts(res.data)
       }
       fetchPosts();
-    },[usernames]);
+    },[username]);
     return(
         <div className="feed">
           <div className="feedWrapper">
