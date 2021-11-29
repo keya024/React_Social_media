@@ -30,8 +30,8 @@ export default function Profile(){
             <div className="profileRight">
                 <div className="profileRightTop">
                     <div className="profileCover">
-                        <img src={user.coverPicture || PF + "persons/noCover.jpg"} alt="" className="profileCoverImg" />
-                        <img src={user.profilePicture || PF + "persons/no.jpg"} alt="" className="profileUserImg" />
+                        <img src={user.coverPicture ? PF + user.coverPicture : PF + "persons/noCover.jpg"} alt="" className="profileCoverImg" />
+                        <img src={user.profilePicture ? PF + user.profilePicture : PF + "persons/no.jpg"} alt="" className="profileUserImg" />
 
                     </div>
                     <div className="profileInfo">
