@@ -3,7 +3,7 @@ import "./rightbar.css"
 import { Users } from "../../dummydata";
 import Online from "../online/Online";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link , useHistory } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 import { Add, Remove } from "@material-ui/icons";
 
@@ -14,6 +14,14 @@ export default function Rightbar({ user }){
     const [followed, setFollowed] = useState(
         currentUser.followings.includes(user?.id)
     );
+
+    const history = useHistory();
+    
+    function logout()
+    {
+         localStorage.clear();
+         history.push('/login');
+    }
 
     useEffect(()=>{
         const getFriends = async () => {
@@ -87,6 +95,9 @@ export default function Rightbar({ user }){
                      <div className="rightbarInfoItem">
                          <span className="rightInfoKey">Relationship:</span>
                          <span className="rightInfoKeyValue">{user.relationship ===1 ? "Single" : user.relationship ===1 ? "Married" : "-"}</span>
+                     </div>
+                     <div className="logoutbtn">
+                         <button type="submit" onClick={logout}>Log out</button>
                      </div>
                  </div>
                  <h4 className="rightbarTitle1">User Friends</h4>

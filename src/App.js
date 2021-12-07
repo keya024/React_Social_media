@@ -4,6 +4,8 @@ import Home from './pages/home/Home.jsx';
 import Profile from './pages/profile/Profile';
 import Login from './pages/login/Login';
 import Register from './pages/register/Register';
+import Messenger from './pages/messenger/Messenger';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -26,6 +28,9 @@ function App() {
          <Route path="/register">
             {user ? <Redirect to="/"/>: <Register />}
          </Route>
+         <Route path="/messenger">
+             {!user ? <Redirect to="/"/>: <Messenger />}
+         </Route>
          <Route path="/profile/:username">
            <Profile />
          </Route>
@@ -35,3 +40,7 @@ function App() {
 }
 
 export default App;
+
+//<Route path="/messenger">
+//{!user ? <Redirect to="/"/>: <Messenger />}
+//</Route>

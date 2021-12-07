@@ -16,14 +16,14 @@ const AuthReducer = (state,action) => {
                 return{
                     user:null,
                     isFecthing:false,
-                    error:action.payload,
+                    error:true,
                 };
             case "FOLLOW":
                 return{
                     ...state,
                     user:{
                         ...state.user,
-                        followings:[...state.user.followings,action.payload],
+                        followings:[...state.user.followings, action.payload],
                     },
                 };
             case "UNFOLLOW":

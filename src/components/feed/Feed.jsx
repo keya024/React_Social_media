@@ -7,7 +7,7 @@ import { AuthContext } from "../../context/AuthContext";
 
 export default function Feed({username}){
     const [posts,setPosts] = useState([]);
-    const {user} = useContext(AuthContext)
+    const {user} = useContext(AuthContext);
 
     useEffect(()=>{
       const fetchPosts = async ()=>{
@@ -19,7 +19,7 @@ export default function Feed({username}){
             return new Date(p2.createdAt) - new Date(p1.createdAt);
           })
         );
-      }
+      };
       fetchPosts();
     },[username,user._id]);
     return(

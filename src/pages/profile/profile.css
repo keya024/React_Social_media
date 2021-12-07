@@ -40,3 +40,6 @@
 .profileRightBottom{
     display: flex;
 }
+.sharePhotoIcon{
+    margin-left: 500px;
+}

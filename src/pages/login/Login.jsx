@@ -2,7 +2,8 @@ import React, { useContext, useRef } from 'react'
 import "./Login.css"
 import { loginCall } from '../../apiCalls';
 import { AuthContext } from '../../context/AuthContext';
-import { CircularProgress } from "@material-ui/core"
+import { CircularProgress } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 export default function Login() {
     const email = useRef();
@@ -33,9 +34,9 @@ export default function Login() {
                             <input placeholder="Password" type="password" minLength="6" className="logininput" ref={password} required/>
                             <button className="loginbutton"type="submit" disabled={isFecthing}>{isFecthing ? <CircularProgress color="white" size="20px" /> : "log in"}</button>
                             <span className="loginforgot">Forgot Password?</span>
-                            <button className="loginregister">
-                                {isFecthing ? <CircularProgress color="white" size="20px" /> : "create an account"}
-                            </button>
+                            <Link to="/register" className="loginregister">
+                               <button className="loginregister">CREATE NEW ACCOUNT</button>
+                            </Link>
                         </form>
                     </div>
         

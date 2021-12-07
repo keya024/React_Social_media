@@ -6,6 +6,8 @@ import Rightbar from "../../components/rightbar/Rightbar";
 import Feed from "../../components/feed/Feed";
 import axios from "axios";
 import { useParams } from "react-router";
+//import { AddPhotoAlternate } from "@material-ui/icons";
+//import Profilepicture from "../../components/profilepicture/Profilepicture";
 
 
 export default function Profile(){
@@ -31,8 +33,7 @@ export default function Profile(){
                 <div className="profileRightTop">
                     <div className="profileCover">
                         <img src={user.coverPicture ? PF + user.coverPicture : PF + "persons/noCover.jpg"} alt="" className="profileCoverImg" />
-                        <img src={user.profilePicture ? PF + user.profilePicture : PF + "persons/no.jpg"} alt="" className="profileUserImg" />
-
+                        <img src={user.profilePicture ? PF + user.profilePicture : PF + "persons/no.jpg"} alt="" className="profileUserImg"  />
                     </div>
                     <div className="profileInfo">
                         <h4 className="profileInfoName">{user.username}</h4>
