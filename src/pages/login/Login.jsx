@@ -2,7 +2,7 @@ import React, { useContext, useRef } from 'react'
 import "./Login.css"
 import { loginCall } from '../../apiCalls';
 import { AuthContext } from '../../context/AuthContext';
-import { CircularProgress } from "@material-ui/core";
+import { CircularProgress , } from "@material-ui/core";
 import { Link } from "react-router-dom";
 
 export default function Login() {
@@ -22,10 +22,10 @@ export default function Login() {
         <div className="login">
             <div className="loginwrapper">
                 <div className="loginleft">
-                <h3 className="loginlogo">Techbook</h3>
+                <h3 className="loginlogo">Alohomora!</h3>
                  <div className="loginBox"></div>
                     <span className="logindesc">
-                        connect with friends and the world around you on Techbook.
+                       Open new doors to connect with friends and the world around you.
                     </span>
                     </div>
                     <div className="loginright">

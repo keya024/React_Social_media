@@ -12,7 +12,8 @@ export default function Topbar(){
         <div className="topbarContainer">
             <div className="topbarLeft">
                 <Link to="/" style={{textDecoration:"none"}}>
-                    <span className="logo" >Techbook</span>
+                    <span className="logo" >Alohomora!</span>
+                    <keyIcon />
                 </Link>
             </div>
             <div className="topbarCenter">
@@ -28,12 +29,7 @@ export default function Topbar(){
                     <span className="topbarLinks">Timeline</span>
                 </div>
                 <div className="topbarIcons">
-                    <div className="topbarIconItem">
-                        <Person />
-                        <span className="topbarIconBadge">
-                            1
-                        </span>
-                    </div>
+                    
                     <div className="topbarIconItem">
                         <Chat />
                         <span className="topbarIconBadge">

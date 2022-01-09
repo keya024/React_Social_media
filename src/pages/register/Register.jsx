@@ -34,10 +34,10 @@ export default function Register() {
         <div className="login">
             <div className="loginwrapper">
                 <div className="loginleft">
-                <h3 className="loginlogo">Techbook</h3>
+                <h3 className="loginlogo">Alohomora!</h3>
                  <div className="loginBox"></div>
                     <span className="logindesc">
-                        connect with friends and the world around you on Techbook.
+                        Open new doors to connect with friends and the world around you.
                     </span>
                     </div>
                     <div className="loginright">
